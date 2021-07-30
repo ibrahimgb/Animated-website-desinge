@@ -1,0 +1,89 @@
+
+:root{
+    --light-gray:#fbfcfd;
+    --wight:#fff;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: sans-serif;
+}
+.hero{
+    width: 100%;
+    height: 100vh;
+    background-image: url(images/background.png);
+    background-size: cover;
+    background-position:top;/*<-------*/
+    position: relative;
+    overflow: hidden;
+}
+.logo{
+    width: 100px;
+    cursor: pointer;
+}
+.navbar{
+    top: 0px;
+    width: 85%;
+    height: 15%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+button{
+    color: var(--light-gray);
+    padding: 10px 25px;
+    background: transparent;
+    border: 1px solid var(--wight);
+    border-radius: 20px;
+    outline: none;/*<------------*/
+    cursor: pointer;
+}
+.content{
+    color:var(--light-gray);
+    position: absolute;
+    top: 50%;
+    left: 8%;
+    transform: translateY(-50%);
+    z-index: 2;
+}
+h1{
+    font-size: 80px;
+    margin: 10px 0 30px;
+    line-height: 80px;
+}
+.side-bar{
+    width: 50px;
+    height: 100vh;
+    background: linear-gradient(#00545d,#000729);
+    position: absolute;
+    top: 0px;
+    right: 0px;
+}
+.menu{
+    display: block;
+    width: 25px;
+    margin: 38px auto ;
+    cursor: pointer;
+    z-index: 3;
+}
+.social .useful{
+    display: inline-block;
+    margin: 4px;
+    margin: 5px auto;
+    cursor: pointer;
+}
+.social-links{
+   
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.useful-links{
+   
+    text-align: center;
+    position: absolute;
+    bottom: 30px;
+}
